@@ -1,0 +1,142 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 500px;
+    width: 1200px;
+    margin-left: 480px;
+    margin-top: 20px;
+}
+table {
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+ 
+th,
+td {
+    font-weight: bold;
+}
+
+/*---------- SLIDE ANIMATION ----------*/
+
+@keyframes slide_animation{
+
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left: 1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}    
+
+}
+@-webkit-keyframes slide_animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left: 1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+   
+}
+.slide-images img{
+    height: 100%;
+    width: 100%;
+}
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+/*---------- END OF ANIMATION PART ----------*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  section {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          padding: 20px;
+  }
+      .social-link {
+          margin: 20px;
+          position: relative;
+
+      }
+
+      .social-link img {
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+          transition: transform 0.3s ease-in-out;
+          position: relative;
+      }
+
+      .social-link img:hover {
+          transform: scale(1.1);
+      }
+  
+  .video.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
